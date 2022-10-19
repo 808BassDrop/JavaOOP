@@ -2,11 +2,14 @@ package com.example.javaoop;
 
 import android.util.Log;
 
-public class Cat {
+public class Cat extends Animal {
     String name;
     int age;
     String color;
     String breed;
+    public Cat(){
+
+    }
 
     public Cat(int age, String name, String color, String breed){
         this.age = age;
