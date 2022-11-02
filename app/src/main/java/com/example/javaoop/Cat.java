@@ -4,9 +4,9 @@ import android.util.Log;
 
 public class Cat extends Animal {
     String name;
-    int age;
-    String color;
-    String breed;
+    protected int age;
+    private String color;
+    private String breed;
     public Cat(){
 
     }
