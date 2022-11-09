@@ -13,7 +13,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Cat Schizo = new Cat();
-        Schizo.talk(3);
-        Schizo.talk("I love peppermints and committing war crimes!");
+        Schizo.talk();
+
+        Puma Messi = new Puma();
+        Messi.talk();
+
+        Cat puma = new Puma();
+        puma.talk();
+
+        Cat cargoTrain = new Lion();
+        cargoTrain.talk();
     }
 }

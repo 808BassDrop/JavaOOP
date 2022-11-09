@@ -7,7 +7,8 @@ public class Cat extends Animal {
     int age;
 
     public Cat(){
-
+        this.name = "Transformator";
+        this.age = -1;
     }
 
     public Cat(int age, String name){
@@ -16,7 +17,7 @@ public class Cat extends Animal {
     }
 
     public void talk(){
-        Log.i("talk()", "Meow! My name is " + name + " and I'm " + age + " years old!");
+        Log.i("talk()", "Meow! I'm cat. My name is " + name + " and I'm " + age + " years old!");
     }
     public void talk(int age){
         Log.i("talk()", "Meow! I'm " + age + " years old!");
