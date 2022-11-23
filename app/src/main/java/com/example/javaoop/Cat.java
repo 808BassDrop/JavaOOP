@@ -7,24 +7,11 @@ public class Cat extends Animal {
     private int age;
     final static int numberOfLegs = 4;
     static int count = 0;
+
+
+
     String helloText;
     CatMood catMood;
-
-    class CatMood{
-        int levelOfMood;
-
-        CatMood(){
-            if(Cat.this.age < 2){
-                levelOfMood = 100;
-            }
-            else if (Cat.this.age >= 2 && Cat.this.age < 7){
-                levelOfMood = 50;
-            }
-            else if (Cat.this.age >= 7){
-                levelOfMood = 20;
-            }
-        }
-    }
 
     static class CountResetter{
         boolean moreThan100;
@@ -40,6 +27,22 @@ public class Cat extends Animal {
 
         void resetCount(int value){
             Cat.count = value;
+        }
+    }
+
+    class CatMood{
+        int levelOfMood;
+
+        CatMood(){
+            if(Cat.this.age < 2){
+                levelOfMood = 100;
+            }
+            else if (Cat.this.age >= 2 && Cat.this.age < 7){
+                levelOfMood = 50;
+            }
+            else if (Cat.this.age >= 7){
+                levelOfMood = 20;
+            }
         }
     }
 
@@ -96,5 +99,31 @@ public class Cat extends Animal {
     }
     public static String whatCatsLike(){
         return " I like playing, jumping and sometimes scratching";
+    }
+
+    public void catchMouse(int mouseWeight){
+        class Mouse{
+            String color;
+            int weight;
+
+            public Mouse(String color, int weight){
+                this.color = color;
+                this.weight = weight;
+
+            }
+
+            String mouseVoice() {
+                return "AAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+            }
+        }
+
+        Mouse mouse = new Mouse("White", mouseWeight);
+
+        if(mouseWeight < 1){
+            Log.i("cat say", "I'm gonna eat you lil mouse! " + mouse.mouseVoice());
+        }
+        else {
+            Log.i("cat say", "Yo big bro you scaring me!");
+        }
     }
 }

@@ -15,23 +15,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Cat cat1 = new Cat();
-        cat1.talk();
-
-        Cat cat2 = new Cat(5, "Alexey");
-        cat2.talk();
-
-        Cat cat3 = new Cat(8, "Tsar");
-        cat3.talk();
-
-        Cat cat4 = new Cat();
-        Cat cat5 = new Cat();
-        Cat cat6 = new Cat();
-        Cat cat7 = new Cat();
-        Cat cat8 = new Cat();
-        Cat cat9 = new Cat();
-
-        Log.i("count", "" + Cat.count);
-        new Cat.CountResetter();
-        Log.i("count", "" + Cat.count);
+        cat1.catchMouse(1);
+        cat1.catchMouse(3);
     }
 }
