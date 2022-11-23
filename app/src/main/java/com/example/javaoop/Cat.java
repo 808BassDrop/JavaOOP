@@ -2,7 +2,7 @@ package com.example.javaoop;
 
 import android.util.Log;
 
-public class Cat extends Animal {
+public abstract class Cat extends Animal {
     String name;
     private int age;
     final static int numberOfLegs = 4;
