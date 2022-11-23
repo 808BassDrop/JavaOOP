@@ -10,8 +10,6 @@ public class Cat extends Animal {
     String helloText;
     CatMood catMood;
 
-
-
     class CatMood{
         int levelOfMood;
 
@@ -25,6 +23,23 @@ public class Cat extends Animal {
             else if (Cat.this.age >= 7){
                 levelOfMood = 20;
             }
+        }
+    }
+
+    static class CountResetter{
+        boolean moreThan100;
+
+        CountResetter(){
+            if(Cat.count > 5){
+                moreThan100 = true;
+            }
+            if (moreThan100){
+                resetCount(0);
+            }
+        }
+
+        void resetCount(int value){
+            Cat.count = value;
         }
     }
 

@@ -23,7 +23,15 @@ public class MainActivity extends AppCompatActivity {
         Cat cat3 = new Cat(8, "Tsar");
         cat3.talk();
 
-        /*Cat.CatMood catMood = new Cat.CatMood();
-        Log.i("levelOfMood", String.valueOf(catMood.levelOfMood));*/
+        Cat cat4 = new Cat();
+        Cat cat5 = new Cat();
+        Cat cat6 = new Cat();
+        Cat cat7 = new Cat();
+        Cat cat8 = new Cat();
+        Cat cat9 = new Cat();
+
+        Log.i("count", "" + Cat.count);
+        new Cat.CountResetter();
+        Log.i("count", "" + Cat.count);
     }
 }
